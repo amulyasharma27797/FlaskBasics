@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Tut</title>
+</head>
+
+<nav>
+    <a href="{{ url_for('home') }}">Home</a>
+</nav>
+
+<br />
+
+<body>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>

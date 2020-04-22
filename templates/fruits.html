@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    {% for fruit in fruits %}
+    <li>{{ fruit }}</li>
+    {% endfor %}
+
+
+    {% if 'apple' in fruits %}
+        <p>Apple is available</p>
+    {% endif %}
+
+
+    {% if 'mango' in fruits %}
+        <p>Mango is available</p>
+    {% else %}
+        <p>Mango is not available</p>
+    {% endif %}
+
+{%  endblock %}
